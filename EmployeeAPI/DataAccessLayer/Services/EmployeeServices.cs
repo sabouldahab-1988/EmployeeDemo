@@ -8,6 +8,10 @@ namespace DataAccessLayer.Services
 {
     public class EmployeeServices
     {
+        /// <summary>
+        /// Get all employees data from the database
+        /// </summary>
+        /// <returns>List<Employees></returns>
         public List<Employee> GetEmployees()
         {
             var context = new SampleDBContext();

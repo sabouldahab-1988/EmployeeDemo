@@ -17,3 +17,4 @@ C:\Users\Saied\Documents\GitHub\EmployeeDemo\EmployeeAPI\DataAccessLayer\obj\Deb
 C:\Users\Saied\Documents\GitHub\EmployeeDemo\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
 C:\Users\Saied\Documents\GitHub\EmployeeDemo\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
 C:\Users\Saied\Documents\GitHub\EmployeeDemo\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Saied\Documents\GitHub\EmployeeDemo\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csprojAssemblyReference.cache

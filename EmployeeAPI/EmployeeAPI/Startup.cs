@@ -28,6 +28,7 @@ namespace EmployeeAPI
             services.AddControllers();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,11 +54,17 @@ namespace EmployeeAPI
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(builder => builder
+ .AllowAnyHeader()
+ .AllowAnyMethod()
+ .SetIsOriginAllowed((host) => true)
+ .AllowCredentials()
+);
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
 
         }
     }
