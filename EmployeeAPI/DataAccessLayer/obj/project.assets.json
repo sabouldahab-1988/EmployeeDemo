@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Saied\\source\\repos\\EmployeeAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Saied\\Documents\\GitHub\\EmployeeDemo\\EmployeeAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\Saied\\source\\repos\\EmployeeAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\Saied\\Documents\\GitHub\\EmployeeDemo\\EmployeeAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Saied\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Saied\\source\\repos\\EmployeeAPI\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Saied\\Documents\\GitHub\\EmployeeDemo\\EmployeeAPI\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Saied\\AppData\\Roaming\\NuGet\\NuGet.Config",
