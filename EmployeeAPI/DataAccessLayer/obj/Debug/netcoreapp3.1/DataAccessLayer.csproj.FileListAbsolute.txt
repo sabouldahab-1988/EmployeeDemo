@@ -1,0 +1,10 @@
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.deps.json
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.json
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\bin\Debug\netcoreapp3.1\DataAccessLayer.pdb
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.dll
+C:\Users\Saied\source\repos\EmployeeAPI\DataAccessLayer\obj\Debug\netcoreapp3.1\DataAccessLayer.pdb
