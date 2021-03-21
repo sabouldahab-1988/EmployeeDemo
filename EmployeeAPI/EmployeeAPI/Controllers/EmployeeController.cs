@@ -38,5 +38,28 @@ namespace EmployeeAPI.Controllers
                 };
             }
         }
+
+        [HttpGet]
+        [Route("EmployeeController/deleteEmployee")]
+        public IActionResult DeleteEmployee(int employeeId)
+        {
+            try
+            {
+                employeeService.DeleteEmployee(employeeId);
+                return new ObjectResult(true)
+                {
+                    StatusCode = Microsoft.AspNetCore.Http.StatusCodes.Status200OK
+                };
+
+            }
+            catch (Exception ex)
+            {
+                return new ObjectResult(ex)
+                {
+                    StatusCode = Microsoft.AspNetCore.Http.StatusCodes.Status500InternalServerError
+                };
+            }
+        }
+
     }
 }

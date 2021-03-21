@@ -20,6 +20,7 @@
         <td>{{e.lastName}}</td>
         <td>{{e.email}}</td>
         <td>{{e.address}}</td>
+        <td><button class="btn btn-danger" (click)="onDeleteEmployee(e.id)">Delete</button></td>
       </tr>
     </tbody>
   </table>

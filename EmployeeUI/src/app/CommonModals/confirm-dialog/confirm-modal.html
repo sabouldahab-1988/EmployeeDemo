@@ -1,0 +1,21 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title">{{title}}</h4>
+</div>
+<form #confirmModalForm="ngForm" (submit)="submitForm(confirmModalForm)">
+  <div class="modal-body">
+    <p>{{messageContent}}</p>
+    <p>{{messageDescription}}
+      <span class="text-danger">{{messageWarning}}</span>
+    </p>
+  </div>
+  <div class="modal-footer">
+    <div *ngIf="confirmModalOptions==0">
+      <button type="button" class="btn btn-outline-secondary mr-1" (click)="modal.close('No')">No</button>
+      <button type="button" class="btn btn-danger" (click)="modal.close('Yes')" >Yes</button>
+    </div>
+    <div *ngIf="confirmModalOptions==1">
+      <button type="button" class="btn btn-outline-secondary" (click)="modal.close('cancel')">Cancel</button>
+      <button type="button" class="btn btn-danger" (click)="modal.close('Ok')">Ok</button>
+    </div>
+  </div>
+</form>

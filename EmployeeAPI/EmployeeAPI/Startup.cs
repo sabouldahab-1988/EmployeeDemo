@@ -55,11 +55,12 @@ namespace EmployeeAPI
 
             app.UseAuthorization();
             app.UseCors(builder => builder
- .AllowAnyHeader()
- .AllowAnyMethod()
- .SetIsOriginAllowed((host) => true)
- .AllowCredentials()
-);
+             .AllowAnyHeader()
+             .AllowAnyMethod()
+             .SetIsOriginAllowed((host) => true)
+             .AllowCredentials()
+            );
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

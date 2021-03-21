@@ -19,5 +19,15 @@ namespace DataAccessLayer.Services
 
             return employeesList;
         }
+
+        public void DeleteEmployee(int employeeId)
+        {
+            using (var context = new SampleDBContext())
+            {
+                var emp = context.Employees.Where(e=>e.Id==employeeId).FirstOrDefault();
+                context.Employees.Remove(emp);
+                context.SaveChanges();
+            }
+        }
     }
 }

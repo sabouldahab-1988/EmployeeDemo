@@ -30,5 +30,11 @@ export class EmployeeService {
     return this.http.get<Employee[]>(this.baseUrl + "/EmployeeController/getEmployees", this.httpOptions).pipe(
       timeout(this.httpTimeOut)
     )
-  }  
+  } 
+  
+  deleteEmployee(employeeId:number){
+    return this.http.get<boolean>(this.baseUrl + "/EmployeeController/deleteEmployee?employeeId="+employeeId, this.httpOptions).pipe(
+      timeout(this.httpTimeOut)
+    )
+  }
 }
