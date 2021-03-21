@@ -32,6 +32,7 @@ export class EmployeeService {
     )
   } 
   
+  //delete employee by Id
   deleteEmployee(employeeId:number){
     return this.http.get<boolean>(this.baseUrl + "/EmployeeController/deleteEmployee?employeeId="+employeeId, this.httpOptions).pipe(
       timeout(this.httpTimeOut)

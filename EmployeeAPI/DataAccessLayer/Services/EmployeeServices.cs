@@ -20,6 +20,10 @@ namespace DataAccessLayer.Services
             return employeesList;
         }
 
+        /// <summary>
+        /// Delete Employee by Id
+        /// </summary>
+        /// <param name="employeeId"></param>
         public void DeleteEmployee(int employeeId)
         {
             using (var context = new SampleDBContext())

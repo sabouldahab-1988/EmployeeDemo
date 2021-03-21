@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
       })
   }
 
+  //on delete employee button
   onDeleteEmployee(employeeId:number){
     const modal: NgbModalRef = this.modalService.open(ConfirmModal);
     (<ConfirmModal>modal.componentInstance).setModalProperties("Delete", "Are you sure you want to remove this image?", ConfirmModalOptions.YesNo);
@@ -46,6 +47,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  //delete employee
   deleteEmployee(employeeId:number){
     this.employeeService.deleteEmployee(employeeId).subscribe(
       (response) => {
