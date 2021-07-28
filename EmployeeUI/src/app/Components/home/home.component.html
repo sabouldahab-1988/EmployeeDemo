@@ -3,6 +3,7 @@
     <div class="spinner-border loader"  style="margin-left: 50%;" *ngIf="isLoading" >
 
     </div>
+    <button class="btn btn-primary" id="employee_btn" (click)="showEmployeeModal(employeeFormModal,$event)">Add Employee</button>
 <table class="table" *ngIf="!isLoading">
     <thead>
       <tr>
@@ -24,4 +25,59 @@
       </tr>
     </tbody>
   </table>
+</div>
+<div id="employeeModal">
+  <ng-template #employeeFormModal let-modal>
+      <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Employees</h4>
+      </div>
+      <div class="modal-body">
+        <form #employeeTemplateForm="ngForm" (submit)="saveEmployee(employeeTemplateForm)">
+          <div class="form-group">
+            <!-- <div id="textfieldId">
+              <input type="text" #idControl="ngModel" 
+              name="employeeId_{{employeeModalForm.employee.id}}" 
+              class="form-control" [ngClass]="{'is-invalid': employeeTemplateForm.submitted  && idControl.invalid}"
+              [(ngModel)]="employeeModalForm.employee.id"/>
+            </div> -->
+            <label>First Name</label>
+            <div id="textfieldFirstName" class="textbox">
+              <input type="text" #firstNameControl="ngModel" 
+              name="employeefirstName_{{employeeModalForm.employee.firstName}}" 
+              class="form-control" [ngClass]="{'is-invalid': employeeTemplateForm.submitted  && firstNameControl.invalid}"
+              [(ngModel)]="employeeModalForm.employee.firstName" required/>
+            </div>
+            <label>Last Name</label>
+            <div id="textfieldLastName" class="textbox">
+              <input type="text" #lastNameControl="ngModel" 
+              name="employeelastName_{{employeeModalForm.employee.lastName}}" 
+              class="form-control" [ngClass]="{'is-invalid': employeeTemplateForm.submitted  && lastNameControl.invalid}"
+              [(ngModel)]="employeeModalForm.employee.lastName" required/>
+            </div>
+            <label>Address</label>
+            <div id="textfieldAddress" class="textbox">
+              <input type="text" #addressControl="ngModel" 
+              name="employeeaddress_{{employeeModalForm.employee.address}}" 
+              class="form-control" [ngClass]="{'is-invalid': employeeTemplateForm.submitted  && addressControl.invalid}"
+              [(ngModel)]="employeeModalForm.employee.address" required/>
+            </div>
+            <label>Email</label>
+            <div id="textfieldemail" class="textbox">
+              <input type="text" #emailControl="ngModel" 
+              name="employeeemail_{{employeeModalForm.employee.email}}" 
+              pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+              class="form-control" [ngClass]="{'is-invalid': employeeTemplateForm.submitted  && emailControl.invalid}"
+              [(ngModel)]="employeeModalForm.employee.email" required/>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success" *ngIf="status!='view'">Save</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="modal-footer">
+          <button class="btn btn-success" (click)="onOkArchivedComments()">
+              Save</button>
+      </div> -->
+  </ng-template>
 </div>

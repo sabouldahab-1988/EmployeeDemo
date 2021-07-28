@@ -1,11 +1,6 @@
-#homeDiv {
-    border-radius: 3px;
-    background-color: white;
-    margin: 20px;
+.textbox{
+    margin-bottom: 10px;
 }
-#dropDownDiv{
-    margin: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.btn-primary{
+    margin-bottom: 10px;
 }
-

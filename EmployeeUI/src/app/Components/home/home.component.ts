@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModalOptions, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrService } from 'ngx-toastr';
 import { ConfirmModal, ConfirmModalOptions } from 'src/app/CommonModals/confirm-dialog/confirm-modal';
 import { Employee } from 'src/app/Models/Employee';
@@ -14,7 +14,15 @@ export class HomeComponent implements OnInit {
 
   employees: Employee[] = [];
   isLoading:boolean=false;
+  employeeModalOption: NgbModalOptions = { size: 'xl', backdrop: 'static' };
+  modalReference: NgbModalRef;
+  public employeeModalForm:{
+    employee: Employee;
+  }
   constructor(public employeeService: EmployeeService,private toastr: ToastrService,public modalService: NgbModal) {
+    this.employeeModalForm = {
+      employee: {id:null,firstName:null,lastName:null,address:null,email:null}
+    };
   }
 
   ngOnInit() {
@@ -60,6 +68,22 @@ export class HomeComponent implements OnInit {
          this.toastr.error('An error occurred while getting Employees', 'Error');
       })
   }
+
+
+  saveEmployee(modalForm:any):void{
+    if(modalForm.valid){
+    }
+    else{
+      this.toastr.warning("Please fill required fields");
+    }
+  }
+
+  showEmployeeModal(employeeForm, event) {
+    event.srcElement.blur();
+    event.preventDefault();
+    this.modalReference = this.modalService.open(employeeForm, this.employeeModalOption);
+  }
+
 
 }
 
